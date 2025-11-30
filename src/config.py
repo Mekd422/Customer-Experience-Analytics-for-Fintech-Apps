@@ -1,7 +1,5 @@
 import os
 from dotenv import load_dotenv
-
-# Load environment variables
 load_dotenv()
 
 # Google Play Store App IDs
@@ -31,5 +29,6 @@ DATA_PATHS = {
     'raw': 'data/raw',
     'processed': 'data/processed',
     'raw_reviews': 'data/raw/reviews_raw.csv',
-    'processed_reviews': 'data/processed/reviews_processed.csv'
+    'processed_reviews': 'data/processed/reviews_processed.csv',
+    'sentiment_results': 'data/processed/reviews_sentiment_themes.csv'
 }
