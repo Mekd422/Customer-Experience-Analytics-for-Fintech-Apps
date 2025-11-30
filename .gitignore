@@ -1,10 +1,12 @@
 # Virtual env
 venv/
 .env
-notebooks/
+
 
 # Python cache
 __pycache__/
+.ipynb_checkpoints/
+sentiment_analysis_eda.ipynb
 *.pyc
 
 # Data
