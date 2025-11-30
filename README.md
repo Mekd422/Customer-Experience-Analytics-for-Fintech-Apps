@@ -24,20 +24,21 @@ This repository contains the analysis of user reviews for **three Ethiopian bank
 bank-reviews-analytics/
 │
 ├─ data/
-│   ├─ raw/                  # Raw scraped reviews
-│   ├─ processed/            # Cleaned & preprocessed datasets
+│ ├─ raw/ # Raw scraped reviews
+│ └─ processed/ # Cleaned & preprocessed datasets
 │
 ├─ src/
-│   ├─ scraper.py            # Scrapes Google Play Store reviews
-│   ├─ preprocessing.py      # Cleans, deduplicates, and normalizes data
-│   ├─ sentiment_analysis.py # Computes sentiment, extracts keywords, assigns themes
-│   ├─ config.py             # Paths & constants
+│ ├─ scraper.py # Scrapes Google Play Store reviews
+│ ├─ preprocessing.py # Cleans, deduplicates, and normalizes data
+│ ├─ sentiment_analysis.py # Computes sentiment, extracts keywords, assigns themes
+│ └─ config.py # Paths & constants
 │
 ├─ notebooks/
-│   └─ Task2_Sentiment_Analysis.ipynb # Optional notebook for exploratory analysis
+│ └─ Task2_Sentiment_Analysis.ipynb # Optional notebook for exploratory analysis
 │
-├─ requirements.txt          # Python dependencies
+├─ requirements.txt # Python dependencies
 └─ README.md
+
 
 ---
 
@@ -91,5 +92,6 @@ bank-reviews-analytics/
 3. Improve **UI/UX** further for ease of navigation.  
 4. Add requested features: **biometric login, notifications, budgeting tools**.  
 5. Implement **AI chatbot** for faster complaint resolution.  
+
 
 
