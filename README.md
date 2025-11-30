@@ -16,31 +16,6 @@ This repository contains the analysis of user reviews for **three Ethiopian bank
 4. Extract themes and keywords to identify satisfaction drivers and pain points.  
 5. Prepare actionable insights for app improvement.  
 
-
----
-
-## Repository Structure
-
-bank-reviews-analytics/
-│
-├── data/
-│   ├── raw/                 # Raw scraped reviews (original Google Play data)
-│   └── processed/           # Cleaned, deduplicated, preprocessed datasets
-│
-├── src/
-│   ├── scraper.py           # Scrapes Google Play Store reviews
-│   ├── preprocessing.py     # Cleans, normalizes, and deduplicates review text
-│   ├── sentiment_analysis.py# Performs sentiment scoring & keyword extraction
-│   └── config.py            # Configuration: paths, constants, settings
-│
-├── notebooks/
-│   └── Task2_Sentiment_Analysis.ipynb   # Notebook for exploration & visualization
-│
-├── requirements.txt         # Project dependencies
-└── README.md                # Documentation, description, and setup guide
-
-
-
 ---
 
 ## Task Summary
@@ -93,6 +68,7 @@ bank-reviews-analytics/
 3. Improve **UI/UX** further for ease of navigation.  
 4. Add requested features: **biometric login, notifications, budgeting tools**.  
 5. Implement **AI chatbot** for faster complaint resolution.  
+
 
 
 
