@@ -5,8 +5,8 @@ load_dotenv()
 # Google Play Store App IDs
 APP_IDS = {
     'CBE': os.getenv('CBE_APP_ID', 'com.combanketh.mobilebanking'),
-    'BOA': os.getenv('BOA_APP_ID', 'com.bankofabyssinia.mobilebanking'),
-    'Dashen': os.getenv('DASHEN_APP_ID', 'com.dashen.dashenmobile')
+    'BOA': os.getenv('BOA_APP_ID', 'com.boa.boaMobileBanking'),
+    'Dashen': os.getenv('DASHEN_APP_ID', 'com.dashen.dashensuperapp')
 }
 
 # Bank Names Mapping
