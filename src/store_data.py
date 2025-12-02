@@ -1,6 +1,9 @@
 import os
 import psycopg2
 import pandas as pd
+from dotenv import load_dotenv
+load_dotenv()
+
 
 df = pd.read_csv('data/processed/reviews_processed.csv')
 
@@ -15,7 +18,7 @@ conn = psycopg2.connect(
 cur = conn.cursor()
 
 # Insert banks and get their IDs
-banks = df['bank'].unique()
+banks = df['bank_name'].unique()
 bank_id_map = {}
 for bank in banks:
     cur.execute("INSERT INTO banks (bank_name, app_name) VALUES (%s, %s) ON CONFLICT (bank_name) DO NOTHING RETURNING bank_id;", (bank, bank + " Mobile"))
@@ -32,7 +35,7 @@ for _, row in df.iterrows():
     cur.execute(
         "INSERT INTO reviews (bank_id, review_text, rating, review_date, sentiment_label, sentiment_score, source) VALUES (%s, %s, %s, %s, %s, %s, %s)",
         (
-            bank_id_map[row['bank']],
+            bank_id_map[row['bank_name']],
             row['review'],
             row['rating'],
             row['date'],
