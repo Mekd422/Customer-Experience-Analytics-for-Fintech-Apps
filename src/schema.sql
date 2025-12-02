@@ -1,6 +1,6 @@
 CREATE TABLE banks (
     bank_id SERIAL PRIMARY KEY,
-    bank_name VARCHAR(255) NOT NULL,
+    bank_name VARCHAR(255) UNIQUE NOT NULL,
     app_name VARCHAR(255) NOT NULL
 );
 
